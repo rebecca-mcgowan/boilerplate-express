@@ -6,8 +6,6 @@ console.log('Hello World');
 //    res.send('Hello Express');
 //});
 
-absolutePath = __dirname + relativePath/File.ext;
-
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/views.index.html');
 });
