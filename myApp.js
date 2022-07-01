@@ -6,10 +6,10 @@ console.log('Hello World');
 
 var myText = 'Hello json';
 //var newString = '';
-//if (process.env.MESSAGE_STYLE == 'uppercase') {
+if (process.env.MESSAGE_STYLE == 'uppercase') {
     response = myText.toUpperCase();
     console.log(response.toUpperCase());
-//}
+}
 //app.get('/', function(req, res) {
 //    res.send('Hello Express');
 //});
