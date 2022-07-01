@@ -4,12 +4,6 @@ let express = require('express');
 let app = express();
 console.log('Hello World');
 
-var myText = 'Hello json';
-//var newString = '';
-if (process.env.MESSAGE_STYLE == 'uppercase') {
-    response = myText.toUpperCase();
-    console.log(response.toUpperCase());
-}
 //app.get('/', function(req, res) {
 //    res.send('Hello Express');
 //});
@@ -24,7 +18,6 @@ app.get('/json', (req, res) => {
         res.json({'message': response.toUpperCase()});
     }
         res.json({'message': response});
-    //res.json({'message': response});
 });
 
 console.log('test');
