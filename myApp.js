@@ -25,6 +25,8 @@ app.get('/json', (req, res) => {
     res.json({"message": process.env.MESSAGE_STYLE});
 });
 
+console.log('test');
+
 app.use('/public', express.static(__dirname + '/public'));
 
 
