@@ -26,6 +26,13 @@ app.get('/json', (req, res) => {
         res.json({'message': response});
 });
 
+app.get('/now', function(req, res, next) {
+    req.time = new Date().toString();
+    next();
+}, function(req, res) {
+    res.json({time: req.time});
+})
+
 app.use('/public', express.static(__dirname + '/public'));
 
 //app.listen(port, () => {
