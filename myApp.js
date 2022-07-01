@@ -20,8 +20,6 @@ app.get('/json', (req, res) => {
         res.json({'message': response});
 });
 
-console.log('test');
-
 app.use('/public', express.static(__dirname + '/public'));
 
 
