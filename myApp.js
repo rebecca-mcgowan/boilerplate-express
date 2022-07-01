@@ -3,6 +3,7 @@ require('dotenv').config();
 let express = require('express');
 let app = express();
 console.log('Hello World');
+//const port = 3000;
 
 //app.get('/', function(req, res) {
 //    res.send('Hello Express');
@@ -27,8 +28,9 @@ app.get('/json', (req, res) => {
 
 app.use('/public', express.static(__dirname + '/public'));
 
-
-
+//app.listen(port, () => {
+//    console.log(`Example app listening on port ${port}`)
+//  })
 
 
 
