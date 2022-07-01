@@ -5,9 +5,11 @@ let app = express();
 console.log('Hello World');
 
 var response = 'Hello json';
-if (process.env.MESSAGE_STYLE == 'uppercase') {
+//var newString = '';
+//if (process.env.MESSAGE_STYLE == 'uppercase') {
     response.toUpperCase();
-}
+    console.log(response.toUpperCase());
+//}
 //app.get('/', function(req, res) {
 //    res.send('Hello Express');
 //});
