@@ -22,7 +22,7 @@ app.get('/json', (req, res) => {
     } else {
         res.json({'message': process.env.MESSAGE_STYLE});
     }
-    //res.json({"message": response.toUpperCase()});
+    res.json({"message": process.env.MESSAGE_STYLE});
 });
 
 app.use('/public', express.static(__dirname + '/public'));
