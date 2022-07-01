@@ -5,8 +5,8 @@ let app = express();
 console.log('Hello World');
 
 var response = 'Hello json';
-if (process.env.MESSAGE_STYLE === 'uppercase') {
-    console.log('success');
+if (process.env.MESSAGE_STYLE == 'uppercase') {
+    response.toUpperCase();
 }
 //app.get('/', function(req, res) {
 //    res.send('Hello Express');
@@ -23,7 +23,7 @@ app.get('/json', (req, res) => {
     //} else {
     //    res.json({'message': process.env.MESSAGE_STYLE});
     //}
-    res.json({response});
+    res.json({'message': response});
 });
 
 console.log('test');
